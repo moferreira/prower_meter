@@ -1,14 +1,15 @@
 # Power meter logger using HAN
 
-This program will use the power meter Home Area Network - HAN port to read data
-from the power meter, save it on a local file while also publish it via MQTT.
+This program will use the power meter's Home Area Network - HAN port to read data
+from it, save the data on a local csv file and also publish it via MQTT. It will
+create one data file per month.
 
-While it has been tested on a Kaifa model MA 109P power meter, it may work with
-all other makes used in the Portugal. To use it in another country you may need
-to change the registers addresses it uses to collect data.
+While it has been tested on a Kaifa MA 109P power meter, it may work with all
+other makes used in the Portugal. To use it in another country you may need to
+change the registers addresses it uses to collect data.
 
-The script has been tested on an ASUS Tinker board running Linaro OS with a
-USB RS485 adapter.
+The script has been tested on an ASUS Tinker with a USB RS485 adapter running
+Linaro OS.
 
 The collected counters are:
 ```
@@ -29,7 +30,9 @@ To do so, include the script on the system /etc/crontab file:
 37 * * * *  root  /usr/bin/python3 /home/linaro/power_logger.py
 52 * * * *  root  /usr/bin/python3 /home/linaro/power_logger.py
 ```
-Before using it, make sure you set the file location and MQTT credentials to
-match your system.
+**Notice:** You have to change the program location to reflect where you have it.
 
-Dependencies: python3 and python modules crcmod and paho.
+Before using it, make sure you set the file location to save data and chenge the MQTT
+credentials to match your system.
+
+**Dependencies:** python3 and python modules crcmod and paho.
