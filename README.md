@@ -31,3 +31,5 @@ To do so, include the script on the system /etc/crontab file:
 ```
 Before using it, make sure you set the file location and MQTT credentials to
 match your system.
+
+Dependencies: python3 and python modules crcmod and paho.
