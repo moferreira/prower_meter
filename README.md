@@ -8,8 +8,8 @@ While it has been tested on a Kaifa MA 109P power meter, it may work with all
 other makes used in the Portugal. To use it in another country you may need to
 change the registers addresses it uses to collect data.
 
-The script has been tested on an ASUS Tinker with a USB RS485 adapter running
-Linaro OS.
+The script has been tested on an ASUS Tinker, running Linaro OS and with a
+USB RS485 adapter.
 
 The collected counters are:
 ```
