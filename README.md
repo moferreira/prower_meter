@@ -19,7 +19,7 @@ The collected counters are:
  minutes
 ```
 Please notice that this is for the Portuguese standards. The registers to get
-the counters data are defined at EDP Distribuição document DEF-C44-509.pdf.
+the counters data are defined at EDP Distribuição document [DEF-C44-509.pdf](https://www.e-redes.pt/sites/eredes/files/2020-07/DEF-C44-509.pdf).
 
 It is expected that cron will be used to run this program every 15 minutes.
 To do so, include the script on the system /etc/crontab file:
