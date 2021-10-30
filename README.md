@@ -32,7 +32,9 @@ To do so, include the script on the system /etc/crontab file:
 ```
 **Notice:** You have to change the program location to reflect where you have it.
 
-Before using it, make sure you set the file location to save data and chenge the MQTT
+Before using it, make sure you set the file location to save data and change the MQTT
 credentials to match your system.
 
 **Dependencies:** python3 and python modules crcmod and paho.
+
+The program is extensively  commented so you can understand and change as you want.
