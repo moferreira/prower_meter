@@ -11,12 +11,12 @@ The script has been tested on an ASUS Tinker board running Linaro OS with a
 USB RS485 adapter.
 
 The collected counters are:
-
+```
  year       imported vazio    exported vazio   imported total
  month      imported cheia    exported cheia   exported total
  day        imported ponta    exported ponta   voltage
  minutes
-
+```
 Please notice that this is for the Portuguese standards. The registers to get
 the counters data are defined at EDP Distribuição document DEF-C44-509.pdf.
 
@@ -29,5 +29,5 @@ To do so, include the script on the system /etc/crontab file:
 37 * * * *  root  /usr/bin/python3 /home/linaro/power_logger.py
 52 * * * *  root  /usr/bin/python3 /home/linaro/power_logger.py
 ```
-Before using, make sure you set the file location and MQTT credentials to match
-your system.
+Before using it, make sure you set the file location and MQTT credentials to
+match your system.
