@@ -13,9 +13,9 @@ USB RS485 adapter.
 
 The collected counters are:
 ```
- year       imported vazio    exported vazio   imported total
- month      imported cheia    exported cheia   exported total
- day        imported ponta    exported ponta   voltage
+ year       last 15 minutes imported (+A)   imported vazio    exported vazio   imported total
+ month      last 15 minutes exported (-A)   imported cheia    exported cheia   exported total
+ day                                        imported ponta    exported ponta   voltage
  minutes
 ```
 Please notice that this is for the Portuguese standards. The registers to get
